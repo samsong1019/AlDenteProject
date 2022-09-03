@@ -1,0 +1,138 @@
+/* variables */
+:root {
+    --pink: rgb(237, 207, 207);
+    --grey: rgb(206, 199, 191);
+}
+
+body {
+    font-family: "Playfair Display", serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home-title {
+    text-align: center;
+    background-color: var(--pink);
+    padding: 2rem 3rem;
+    border-radius: .5rem;
+    margin: 3rem 2rem 0;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#big-cont {
+    display: flex;
+    flex-direction: row;
+    width: 92%;
+    min-height: 500px;
+    background-color: var(--grey);
+    border-radius: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+#search-box {
+    margin: 2rem;
+    margin-top: .9rem;
+    margin-left: 1rem;
+    min-width: 40%;
+}
+
+#search-text {
+    margin-bottom: 1.2rem;
+}
+
+#genre-container {
+    margin-left: 1.2rem;
+    margin-top: 1rem;
+}
+
+#search-by-genre {
+    font-size: 1.2rem;
+}
+
+.genre {
+    margin: .15rem 0;
+    font-size: 1rem;
+    padding-left: .3rem;
+    max-width: 8rem;
+}
+
+/* Search bar */
+#search-text {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+/* Temp styling so there is feedback on what is being clicked (feel free to change later) */
+#searchGenre :hover {
+    background-color: var(--pink);
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+
+/* Recipe of the Day */
+#recipe-today {
+    margin: 2rem;
+    min-width: 40%;
+    border-left-color: black;
+    border-left-width: 2px;
+    border-left-style: solid;
+    padding-left: .5rem;
+}
+
+#ingredients {
+    margin-left: 2rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem; 
+}
+
+#h1-el {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+#h2-el {
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#drink-today {
+    background-color: var(--pink);
+    border-radius: 0rem .5rem .5rem 0;
+    padding: 1rem 2rem;
+    padding-top: 2rem;
+}
+
+#h1-el-drink {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1776px) {
+    #big-cont {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #big-cont {
+        width: 75%;
+        flex-direction: column;
+    }
+    #recipe-today {
+        border-style: none;
+    }
+    #drink-today {
+        border-radius: 0 0 .5rem .5rem;
+    }
+}

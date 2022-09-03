@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jQuery UI <link> tag -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Poppins:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom css -->
+    <link href="Assets/CSS/style.css" rel="stylesheet">
+    <!-- Moment -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+  ></script>
+    <title>Al Dente</title>
+
+</head>     
+
+<body>
+
+
+    <header>
+        <nav class="container mx-auto border-gray-200 p-5 rounded-2xl bg-gray-600">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="index.html" class="flex items-center">
+                    <img src="Assets\Images\icons8-noodles-60.png" class="mr-3 h-6 sm:h-9" alt="Aldente Logo">
+                    <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Aldente</span>
+                </a>
+                <div class="flex">
+                    <button type="button" class=" rounded-lg text-white text-sm px-2 bg-gray-500 border-solid border-4" id="resultsNavBtnOne">My Cookbook</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container mx-auto">
+        <h1 id="home-title">Search Recipes</h1>
+    </div>
+
+    <main class="container mx-auto">
+        <!-- This is the main container, probably will not be visible -->
+        <container id="big-cont">
+            <!-- box for search form and search by genre -->
+            <container id="search-box">
+                <!-- Search form from tailwind -->
+                <form id="search-form">
+                    <label class="relative block">
+                        <span class="sr-only">Search</span>
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+                        </span>
+                        <!-- Text input and search button -->
+                        <input id="search-text" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-indigo-300 focus:ring-indigo-300 focus:ring-1 sm:text-sm" placeholder="Search & click enter here..." type="text" name="search"/>
+                    </label>  
+                </form>  
+                <div id="genre-container">
+                    <h2  id="search-by-genre">Or search by genre:</h2>
+                    <ul data-page="home" id="searchGenre">
+                        <li class='genre' id="beef">Beef</li>
+                        <li class='genre' id="breakfast">Breakfast</li>
+                        <li class='genre' id="chicken">Chicken</li>
+                        <li class='genre' id="dessert">Dessert</li>
+                        <li class='genre' id="goat">Goat</li>
+                        <li class='genre' id="lamb">Lamb</li>
+                        <li class='genre' id="miscellaneous">Miscellaneous</li>
+                        <li class='genre' id="pasta">Pasta</li>
+                        <li class='genre' id="pork">Pork</li>
+                        <li class='genre' id="seafood">Seafood</li>
+                        <li class='genre' id="side">Side</li>
+                        <li class='genre' id="starter">Starter</li>
+                        <li class='genre' id="vegan">Vegan</li>
+                        <li class='genre' id="vegetarian">Vegetarian</li>
+                    </ul>
+                </div>                  
+            </container>
+            <!-- box for recipe of the day -->
+            <container id="recipe-today">
+            </container>
+            <container id="drink-today">
+            </container>
+        </container>
+    </main>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- JQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <script src="Assets/JS/script.js"></script>
+    <script src="Assets/JS/results.js"></script>
+</body>
+
+</html> 

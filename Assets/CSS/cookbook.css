@@ -1,0 +1,36 @@
+/* variables */
+:root {
+  --pink: rgb(237, 207, 207);
+  --grey: rgb(206, 199, 191);
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+#cookbookHeader {
+  text-align: center;
+  background-color:  var(--pink);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-radius: .3rem;
+  padding: .5rem;
+}
+
+#cookbookContainer{
+  background-color: var(--grey);
+  margin-top: 1rem;
+}
+
+#clearListBtn:hover {
+  background-color: rgb(237, 207, 207);
+  font-size: 1rem;
+}
+
+#localSavedRecipeList {
+  border-width: 3px;
+}
+
+#savedRecipeListEl {
+  padding: .2rem;
+}

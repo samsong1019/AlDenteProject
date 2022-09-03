@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results | Al Dente</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+     <!-- jQuery UI <link> tag -->
+     <link
+     rel="stylesheet"
+     href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Poppins:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom css -->
+    <link href="..\CSS\results.css" rel="stylesheet">
+</head>
+<body>
+    <header class="navbarContainer">
+        <nav class="container mx-auto border-gray-200 p-5 rounded-2xl bg-gray-600">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="../../index.html" class="flex items-center">
+                    <img src="..\Images\icons8-noodles-60.png" class="mr-3 h-6 sm:h-9" alt="Aldente Logo">
+                    <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Aldente</span>
+                </a>
+                <div class="flex">
+                    <button type="button" class="rounded-lg text-white text-sm px-2 bg-gray-500 border-solid border-4" id="resultsNavBtnTwo">My Cookbook</button>
+                </div>
+            </div>
+        </nav>
+    </header> 
+
+    <Main class="container mx-auto">
+        <div class="container my-4 flex justify-center gap-5" id="resultsHeader">
+            <h1>Results</h1>
+        </div>
+        <div class="grid grid-cols-3 gap-4" id="recipeSuggestions">
+        <!-- dynamically created recipe cards -->
+        </div>
+    </Main>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- JQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <script src="..\JS\script.js"></script>
+    <script src="..\JS\results.js"></script>
+</body>
+</html>
